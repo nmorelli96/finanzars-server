@@ -31,7 +31,7 @@ connection.once("open", function () {
 app.use("/", router);
 
 app.get('/', (req, res) => {
-  res.send('Complete the URL with the desired API JSON')
+  res.sendFile(__dirname + '/index.html')
 })
 
 app.listen(PORT, function () {
